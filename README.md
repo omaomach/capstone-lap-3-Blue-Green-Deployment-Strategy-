@@ -272,15 +272,3 @@ For lab teardown after submission, resources are deleted in dependency order: Ev
     ├── 08-cloudwatch-alarms/          ← three alarms, metrics X-shape
     └── 09-rollback/                   ← Lambda, IAM, EventBridge, end-to-end test
 ```
-
----
-
-## Reproducing locally
-
-```bash
-# Requires: aws CLI configured for account 574128098399, jq, bc, curl
-git clone <this-repo>
-cd <this-repo>
-chmod +x ./scripts/smoke-test.sh
-./scripts/smoke-test.sh
-```
